@@ -89,9 +89,9 @@ function setPage() {
 }
 
 
-/*function eventHandler(e) {
-    console.log(e.target.value);
-} */
+function eventHandler(e) {
+    //console.log(e.target.value);
+} 
 
 
 nextButton.addEventListener('click', () => {
