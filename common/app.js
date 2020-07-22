@@ -89,9 +89,9 @@ function setPage() {
 }
 
 
-function eventHandler(e) {
+/*function eventHandler(e) {
     console.log(e.target.value);
-}
+} */
 
 
 nextButton.addEventListener('click', () => {
@@ -110,10 +110,10 @@ nextButton.addEventListener('click', () => {
     rounds++;
     
     
-    console.log(userChoice);
+    //console.log(userChoice);
 
     capturedPokemon.push(pokemon);
-    console.log(capturedPokemon);
+    //console.log(capturedPokemon);
 
     /*if (capturedPokemon.length === 10) {
         nextButton.disabled = true;
