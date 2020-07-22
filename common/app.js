@@ -89,7 +89,7 @@ function setPage() {
 }
 
 
-function eventHandler(e) {
+function eventHandler() {
     //console.log(e.target.value);
 } 
 
