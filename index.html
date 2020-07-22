@@ -22,31 +22,41 @@
     </header>
     <main>
         <div>
-            <p id="total-pokemon">Total Pokemon Caught</p>
+            <p>
+                 <span id="total-pokemon"></span>
+            </p>
         </div>
         <section>
             
-            <h2 id="pokemon-name"></h2>
-                <label>
+            
+                <label class="pokemon">
+                    <span></span>
                     <input type="radio" name="pokemon" value="">
-                    <img src="" width="150" height="150">
+                    <img width=120 height=120>
                 </label>
             
-            <h2 id="pokemon-name"></h2>
+            
+                
                 <label>
+                    <span></span>
                     <input type="radio" name="pokemon" value="">
-                    <img src="" width="150" height="150">
+                    <img width=120 height=120>
                 </label>
             
-            <h2 id="pokemon-name"></h2>
+            
+                
                 <label>
+                    <span></span>
                     <input type="radio" name="pokemon" value="">
-                    <img src="" width="150" height="150">
+                    <img width=120 height=120>
                 </label>
+        
                 
                 <div id="next-container" class="hidden">
                     <button id="next-button">Next</button>
+                    <button id="results-button">Results</button>
                 </div>
+                
         </section>
     
     </main>
@@ -54,7 +64,7 @@
         <div></div>
     </footer>
 
-    <script type="module" src="common/app.js"></script>
+    <script type="module" src="common/app.js", src="common/total-pokemon.js"></script>
 </body>
 
 </html>

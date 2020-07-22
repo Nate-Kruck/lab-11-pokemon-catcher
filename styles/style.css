@@ -1,24 +1,47 @@
 
-body {
-    /* https://coolors.co/generate and click export -> scss to get the colors to copy and paste below*/
-    --color1: hsla(349, 69%, 76%, 1);
-    --color2: hsla(207, 67%, 44%, 1);
-    --color3: hsla(200, 61%, 56%, 1);
-    --color4: hsla(187, 41%, 94%, 1);
-    --color5: hsla(170, 28%, 95%, 1);
 
-    /* --color1: hsla(45, 86%, 83%, 1);
-    --color2: hsla(135, 65%, 98%, 1);
-    --color3: hsla(315, 37%, 86%, 1);
-    --color4: hsla(45, 73%, 98%, 1);
-    --color5: hsla(224, 40%, 79%, 1); */
-    
-    --header-height: 80px;
-    --shadow: 0px 10px 20px -12px rgba(0,0,0,0.45);
-    --gutter: 30px;
-    --footer-height: 25px;
-    
-    font-family: 'Titillium Web', sans-serif;
-    background-color: var(--color2);
+* {
+    box-sizing: border-box;
 }
+
+body {
+    font-family: fantasy;
+    background: blanchedalmond;
+    margin: 0 auto;
+}
+
+header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background: bisque;
+    color: black;
+}
+
+main {
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    height: 1000px;
+    padding: 20px;
+    background: whitesmoke;
+    text-align: center;
+}
+
+h2 {
+    margin-top: 0;
+}
+
+input[type=radio]:checked + img {
+    border: solid 3px black;
+    transform: rotateZ(-15deg) rotateX(20deg);
+    border-radius: 10px;
+}
+
+input {
+    display: none;
+}
+
+
+
 
