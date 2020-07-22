@@ -8,6 +8,7 @@ const totalPokemon = document.getElementById('total-pokemon');
 const nextButton = document.getElementById('next-container');
 let remainingPokemon = pokemonData.slice();
 let capturedPokemon = [];
+
 let rounds = 0;
 
 
@@ -97,7 +98,7 @@ nextButton.addEventListener('click', () => {
     if (rounds === 10) {
         window.location = './results/index.html';
     }
-    nextButton.classList.remove('disabled');
+    nextButton.disabled = true;
     
     
     const clickedPokemon = document.querySelector('input:checked');
@@ -107,7 +108,7 @@ nextButton.addEventListener('click', () => {
     // resets radio button after next button is clicked everytime
     clickedPokemon.checked = false;
     rounds++;
-
+    
     
     console.log(userChoice);
 
@@ -118,16 +119,21 @@ nextButton.addEventListener('click', () => {
         nextButton.disabled = true;
     }*/
     
-    
+
+    const stringEncountered = JSON.stringify(capturedPokemon);
+    localStorage.setItem('ENCOUNTERED', stringEncountered);
+
     totalPokemon.textContent = `Total Pokemon: ${rounds}`;
    
 
-    //conditional
+    
+    
     
     
     setPage();
     
 });
+
 
 
 

@@ -16,3 +16,12 @@ export function findById(items, name){
     }
     return null;
 }
+
+export function getEncountered() {
+
+    const emptyArray = '[]';
+    const rawEncountered = localStorage.getItem('ENCOUNTERED') || emptyArray;
+    const cart = JSON.parse(rawEncountered);
+
+    return cart;
+}
